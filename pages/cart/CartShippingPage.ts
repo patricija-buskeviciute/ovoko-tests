@@ -9,7 +9,7 @@ export class CartShippingPage {
     constructor(page: Page) {
         this.page = page;
         this.continueButton = page.getByTestId('shipping-type-submit');
-        this.deliveryRadioButton = page.getByTestId('shipping-type-ups_courier');
+        this.deliveryRadioButton = page.getByTestId(/shipping-type-.*/);
     }
 
     async selectDeliveryType() {
