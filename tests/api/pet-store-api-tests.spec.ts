@@ -1,6 +1,6 @@
 import { test, expect, request } from '@playwright/test';
 import { StoreService } from '../../services/StoreService.ts';
-import { PetService } from '../../services/petService.ts';
+import { PetService } from '../../services/PetService.ts';
 import { urls } from '../../utils/api-urls.ts';
 import { withRetry } from '../../utils/retryHelpers.ts';
 
