@@ -17,6 +17,8 @@ jobs:
       run: npm ci
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
+    - name: Install Stealth browser
+      run: npm install playwright-extra puppeteer-extra-plugin-stealth
     - name: Run RRR.lt e2e tests
       run: npm run test-e2e
     - name: Run Swagger Petshop API tests
