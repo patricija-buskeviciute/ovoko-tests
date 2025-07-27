@@ -27,7 +27,7 @@ test.describe('Perform purchase up to Confirmation', () => {
     const stealthPlugin = require("puppeteer-extra-plugin-stealth")();
     chromium.use(stealthPlugin);
 
-    const browser = await chromium.launch();
+    const browser = await chromium.launch({ headless: true });
     context = await browser.newContext();
     page = await context.newPage();
 
